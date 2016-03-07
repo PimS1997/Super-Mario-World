@@ -57,7 +57,31 @@
         name="Static Object"
         isAbstract="false"
         isLeaf="false"
-        isActiveClass="false" />
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f80ed67a-ccb6-40ae-b84f-d08b308abf3a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="46265ca7-bea8-4f42-9203-efd1bcf3936c"
+              LastKnownName="GameObject"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="1972d125-e818-4459-87db-86eaeecf31cd"
+            name="isSolid"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <class
@@ -66,6 +90,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="41f76966-e185-4746-9de0-59653ec98f91"
+            isSubstitutable="false">
+            <classMoniker
+              Id="46265ca7-bea8-4f42-9203-efd1bcf3936c"
+              LastKnownName="GameObject"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
           <operation
             Id="f39c5e70-7835-49f1-a7d8-20e43e5c27c9"
@@ -93,6 +127,16 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5a429152-9385-4379-97bf-3d050ee7ae45"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f6950128-3e1c-4041-b98d-c2244504da40"
+              LastKnownName="Moveable Object"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property
             Id="ba1d5730-36a2-4eb2-afea-83b8b559340a"
@@ -150,12 +194,64 @@
             isQuery="false" />
           <operation
             Id="c661aa0b-e84b-47f8-8346-53e0775a70e8"
+            name="Dead"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
         </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dcd2ede6-0eed-4969-8a25-16306c56f532"
+        name="Powerup"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="c7609ce4-bc19-4299-9fb7-8d540da8e4a8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="982281e9-a8ca-473e-986f-f43ac16c1c1c"
+              LastKnownName="Static Object"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f8e36054-1a25-4f22-8e74-6c7b1491596a"
+        name="Coin"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5bc65c28-e100-4a32-92b4-f425aee0178a"
+            isSubstitutable="false">
+            <classMoniker
+              Id="982281e9-a8ca-473e-986f-f43ac16c1c1c"
+              LastKnownName="Static Object"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="397ef31d-c1ed-45d9-98b5-ec4834754f3b"
+            name="isPickedUp"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>

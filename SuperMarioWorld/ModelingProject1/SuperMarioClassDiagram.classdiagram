@@ -31,11 +31,28 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="964e1894-b812-47be-921a-e3ce849612a3" name="Static Object" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="982281e9-a8ca-473e-986f-f43ac16c1c1c" />
+        <generalsInternal>
+          <generalization Id="3112f337-6eef-4c21-8aa6-6dcb1948781a" isSubstitutable="false">
+            <classMoniker Id="8ccbb838-8a46-4c74-9c47-afc1632d62bd" LastKnownName="GameObject" />
+            <elementDefinition Id="f80ed67a-ccb6-40ae-b84f-d08b308abf3a" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="aea4feb7-077e-4292-bbf6-2fc6044db8e9" name="isSolid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1972d125-e818-4459-87db-86eaeecf31cd" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
       <class Id="6ea78238-c36d-4acb-a831-5f606cf768ac" name="Moveable Object" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f6950128-3e1c-4041-b98d-c2244504da40" />
+        <generalsInternal>
+          <generalization Id="563a29d8-3f35-4535-9e86-65c24a049c42" isSubstitutable="false">
+            <classMoniker Id="8ccbb838-8a46-4c74-9c47-afc1632d62bd" LastKnownName="GameObject" />
+            <elementDefinition Id="41f76966-e185-4746-9de0-59653ec98f91" />
+          </generalization>
+        </generalsInternal>
         <ownedOperationsInternal>
           <operation Id="ca52b729-a19a-4b29-a424-815bd14f18e7" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f39c5e70-7835-49f1-a7d8-20e43e5c27c9" />
@@ -49,6 +66,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="deeffdee-2b33-47d8-9b28-1ebbce76fbce" name="Player" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="58828b86-1120-40fa-b845-b81a7f540de7" />
+        <generalsInternal>
+          <generalization Id="7f71a22e-432c-46b6-bc3c-b57631156f7a" isSubstitutable="false">
+            <classMoniker Id="6ea78238-c36d-4acb-a831-5f606cf768ac" LastKnownName="Moveable Object" />
+            <elementDefinition Id="5a429152-9385-4379-97bf-3d050ee7ae45" />
+          </generalization>
+        </generalsInternal>
         <ownedAttributesInternal>
           <property Id="6dbc7691-9be5-4ec1-9d08-0a7dae20c2c2" name="Score" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="ba1d5730-36a2-4eb2-afea-83b8b559340a" />
@@ -67,10 +90,37 @@
           <operation Id="946bfde8-e40c-4651-a532-192fb1f6652e" name="Jump" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f044e4c2-57a9-4cd3-ae0c-bcae1e74b0e6" />
           </operation>
-          <operation Id="f0a454e0-acc3-40c3-8a6b-638bb38ae0f8" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="f0a454e0-acc3-40c3-8a6b-638bb38ae0f8" name="Dead" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c661aa0b-e84b-47f8-8346-53e0775a70e8" />
           </operation>
         </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9d02f09f-629d-4215-a46a-fef0f08a25ec" name="Powerup" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dcd2ede6-0eed-4969-8a25-16306c56f532" />
+        <generalsInternal>
+          <generalization Id="9a4f552a-205e-4fbc-839d-032185d2f29d" isSubstitutable="false">
+            <classMoniker Id="964e1894-b812-47be-921a-e3ce849612a3" LastKnownName="Static Object" />
+            <elementDefinition Id="c7609ce4-bc19-4299-9fb7-8d540da8e4a8" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="99171319-9a9e-492a-91c4-acf14cf845c8" name="Coin" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f8e36054-1a25-4f22-8e74-6c7b1491596a" />
+        <generalsInternal>
+          <generalization Id="4ce447e5-611b-4fdd-8072-3281acc71dcb" isSubstitutable="false">
+            <classMoniker Id="964e1894-b812-47be-921a-e3ce849612a3" LastKnownName="Static Object" />
+            <elementDefinition Id="5bc65c28-e100-4a32-92b4-f425aee0178a" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="70d41109-46a4-441f-8cef-8b466cdea8a8" name="isPickedUp" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="397ef31d-c1ed-45d9-98b5-ec4834754f3b" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
