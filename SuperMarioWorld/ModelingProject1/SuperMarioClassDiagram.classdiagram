@@ -43,7 +43,7 @@
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="ca52b729-a19a-4b29-a424-815bd14f18e7" name="move" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+          <operation Id="ca52b729-a19a-4b29-a424-815bd14f18e7" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f39c5e70-7835-49f1-a7d8-20e43e5c27c9" />
           </operation>
           <operation Id="063fa412-4370-49ae-84aa-9cc608012ade" name="checkCollide" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -85,9 +85,6 @@
           <operation Id="f0a454e0-acc3-40c3-8a6b-638bb38ae0f8" name="OnDeath" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c661aa0b-e84b-47f8-8346-53e0775a70e8" />
           </operation>
-          <operation Id="2776a56f-b4ca-472b-a8e8-c714bc756157" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="b9d334d3-894a-4229-b428-5fca96077bb5" />
-          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -95,9 +92,9 @@
       <class Id="9d02f09f-629d-4215-a46a-fef0f08a25ec" name="Powerup" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="dcd2ede6-0eed-4969-8a25-16306c56f532" />
         <generalsInternal>
-          <generalization Id="9a4f552a-205e-4fbc-839d-032185d2f29d" isSubstitutable="false">
-            <classMoniker Id="964e1894-b812-47be-921a-e3ce849612a3" LastKnownName="Static Object" />
-            <elementDefinition Id="c7609ce4-bc19-4299-9fb7-8d540da8e4a8" />
+          <generalization Id="99de0305-bbdf-4479-ac34-b60c595949d5" isSubstitutable="false">
+            <classMoniker Id="6ea78238-c36d-4acb-a831-5f606cf768ac" LastKnownName="Moveable Object" />
+            <elementDefinition Id="70ba4e54-ec9a-4ab9-9d96-a308afe0846f" />
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
@@ -138,8 +135,8 @@
           </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
-          <operation Id="abcaac3b-3353-4ae2-9d5d-79bdff770386" name="move" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="4a2c4daf-dae0-4900-ab3f-441a36219272" />
+          <operation Id="9ee81762-61e9-4ef9-9b80-6ecec675be93" name="OnDeath" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5589219b-a120-4d20-9f00-9cb1ad969e81" />
           </operation>
         </ownedOperationsInternal>
       </class>
@@ -153,11 +150,6 @@
             <elementDefinition Id="16f8e8ea-cfc0-4d82-88c8-96c630651873" />
           </generalization>
         </generalsInternal>
-        <ownedOperationsInternal>
-          <operation Id="728695aa-4c38-4016-b2e5-a39ef9ec8149" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="8d75c7a3-f1b3-4f7e-a162-0cc6392fbd09" />
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -174,11 +166,6 @@
             <elementDefinition Id="0ed21e21-a7c6-4364-9351-2f3405227609" />
           </property>
         </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="4340551b-9b4b-4d4c-b8d1-34c220731dbb" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="7bbd8f1f-9fa9-4b19-892d-aa0b2cee560c" />
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -209,17 +196,6 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="f3d13d2c-157a-4c7f-ab67-6c285b8f2662" name="Flower" isAbstract="false" isLeaf="false" isActiveClass="false">
-        <elementDefinition Id="8ee4eb7d-81ef-4125-8c72-d2c0f22ca9ca" />
-        <generalsInternal>
-          <generalization Id="e35ec24b-afac-4142-87dc-1110619145b7" isSubstitutable="false">
-            <classMoniker Id="9d02f09f-629d-4215-a46a-fef0f08a25ec" LastKnownName="Powerup" />
-            <elementDefinition Id="a16b2eee-f564-48db-b179-93f5f0056d96" />
-          </generalization>
-        </generalsInternal>
-      </class>
-    </logicalClassDesignerModelHasTypes>
-    <logicalClassDesignerModelHasTypes>
       <class Id="1e62f604-5242-4a08-a447-af8a082029bb" name="BulletBill" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="9b8dd6fa-9257-4955-9567-c39e4d1f3b8d" />
         <generalsInternal>
@@ -233,11 +209,6 @@
             <elementDefinition Id="746152c6-82be-4e80-8525-ce32fea4285d" />
           </property>
         </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="649d25cb-3657-4a3d-a962-d827ed43fcbd" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="40c69e09-e9dd-4b80-ad96-cb9c32fbaaf6" />
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -250,11 +221,75 @@
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="79ffedfe-dbdb-499b-98d8-b4b937994145" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="8cf9f1fb-8dde-46dd-bcbe-a5381910a55c" />
-          </operation>
           <operation Id="bb2623e3-40f9-4705-a6e6-e24b96f3e343" name="useFlameThrower" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="fc4d71fb-fa68-4a64-ae62-5ad01e49552a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="4e9c6b2d-3480-408d-bd29-6d95ca468ba3" name="Level" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5448229f-1f71-48c8-b5ac-aaf789973832" />
+        <targetEnds>
+          <association Id="146c781f-bd47-4c57-a262-9d8c3be1af5c" isDerived="false" sourceEndRoleName="Level" targetEndRoleName="GameObject" isLeaf="false" isAbstract="false">
+            <classMoniker Id="8ccbb838-8a46-4c74-9c47-afc1632d62bd" LastKnownName="GameObject" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="652d001e-bf61-4ac5-97ee-c9cf2159fa33" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e79501e8-a6a0-4f6f-963d-d2ba46581939" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="dbcf4dd2-4734-4d16-abd6-e4173831ed3f" name="GameObject" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                  <lowerValueInternal>
+                    <literalString Id="35e97ad6-99db-4ad6-9e51-0a927373ce31" name="Lower" value="*">
+                      <elementDefinition Id="afb031c7-09f8-4fd5-954b-1faaab82af51" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="92e495e0-1b3f-4154-9dc9-11a15d3faf1a" name="Upper" value="*">
+                      <elementDefinition Id="d20549b9-710c-41b5-8e88-d4188845587f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="3dac183e-26be-4524-b873-932f2bce8ba2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="749bdb5f-9948-4385-a7ba-e62fb9fc7789" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="abd7acb2-65d8-4e46-9871-a191aafbed1c" name="GameObjects&lt;GameObject&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9fe9c019-01f8-4963-90ef-5f1c252e5eac" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="31e5a343-0b91-4997-8295-5316a5eefdf8" name="Build" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="78738642-47a7-4994-9bbf-fcf447700dec" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="179b1ce7-67da-497d-b001-ad8afc75b522" name="MysteryBlock" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="531c0605-996d-4b82-b831-5298422fb464" />
+        <generalsInternal>
+          <generalization Id="611cfbb7-52ce-4f51-b243-6c1d730936f8" isSubstitutable="false">
+            <classMoniker Id="964e1894-b812-47be-921a-e3ce849612a3" LastKnownName="Static Object" />
+            <elementDefinition Id="b5964a17-7370-4ce0-8cce-2d18928eb717" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="bcfc0112-40cb-4616-9630-59e2fd29b16f" name="Contains" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4b6a0399-c701-4166-a410-7cc751668782" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="13f0be23-4c3d-4332-a1ae-94e69a9ff5be" name="SpitItem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e0752c65-a07a-466d-aff2-e8b1f61c6bca" />
+          </operation>
+          <operation Id="38c8e5b4-db5d-44b2-aeb9-3c48015ea5fc" name="OnEmpty" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e3c73a00-6e63-4ae0-888f-476c16244975" />
           </operation>
         </ownedOperationsInternal>
       </class>
