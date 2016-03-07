@@ -27,6 +27,9 @@
           <property Id="aea4feb7-077e-4292-bbf6-2fc6044db8e9" name="isSolid" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="1972d125-e818-4459-87db-86eaeecf31cd" />
           </property>
+          <property Id="5bf1acd1-a352-4ad3-9f55-697a01a41f39" name="isBreakable" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9782a9d2-fbab-4ee6-8709-d45f870f55d0" />
+          </property>
         </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -126,6 +129,11 @@
             <elementDefinition Id="10684bc0-e759-46c1-9423-09d21991b22d" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="29f14efc-44cd-4610-bc00-349e6b560024" name="isFlying" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8272be97-a55b-4408-9abb-8c6f7df3e5d9" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -151,8 +159,24 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="d00b7f9c-9867-4ea8-b2fe-e0a7f9daa20b" name="Class1" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="d00b7f9c-9867-4ea8-b2fe-e0a7f9daa20b" name="Goomba" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="ec750e20-ff45-4b05-a93a-0d9e037d6c1b" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8fd7dc35-4b3b-40d4-b99b-53c059a17eba" name="Brick" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="262fba6d-3473-46af-b582-c69c7a58df51" />
+        <generalsInternal>
+          <generalization Id="350084de-f7dc-41ab-b9cb-d902b9181844" isSubstitutable="false">
+            <classMoniker Id="964e1894-b812-47be-921a-e3ce849612a3" LastKnownName="Static Object" />
+            <elementDefinition Id="06700d42-4408-468e-b8c2-77d5fe25cdef" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="150d4349-777c-4b52-bb8a-059fe2d146f0" name="isBroken" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="778b4abe-a4a4-40bf-9c86-5ad46db2d239" />
+          </property>
+        </ownedAttributesInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
