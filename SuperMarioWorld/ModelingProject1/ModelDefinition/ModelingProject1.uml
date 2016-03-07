@@ -316,7 +316,7 @@
     <packageHasNamedElement>
       <class
         Id="dcf4eb47-c43f-480b-b9f4-8eb92e879a78"
-        name="Hammerman"
+        name="Goomba"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">

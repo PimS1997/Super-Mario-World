@@ -140,7 +140,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="614d45d8-5368-41a3-b12d-c67093ca52d7" name="Hammerman" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="614d45d8-5368-41a3-b12d-c67093ca52d7" name="Goomba" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="dcf4eb47-c43f-480b-b9f4-8eb92e879a78" />
         <generalsInternal>
           <generalization Id="3e06e83a-bab9-4a46-ac4c-61ecc6ab20c6" isSubstitutable="false">
