@@ -2,7 +2,7 @@
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e155044c-37db-4124-96c1-d6d660098edd" name="SuperMarioClassDiagram" linkedPackageId="0864d9c7-d9d0-4a17-96b2-d6eed7ff2384" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
-      <class Id="8ccbb838-8a46-4c74-9c47-afc1632d62bd" name="GameObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="8ccbb838-8a46-4c74-9c47-afc1632d62bd" name="GameObject" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="46265ca7-bea8-4f42-9203-efd1bcf3936c" />
         <ownedAttributesInternal>
           <property Id="cbb338fc-dd02-4666-9413-19fac2463e9c" name="Location" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">

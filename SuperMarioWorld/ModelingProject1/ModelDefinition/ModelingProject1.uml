@@ -22,7 +22,7 @@
       <class
         Id="46265ca7-bea8-4f42-9203-efd1bcf3936c"
         name="GameObject"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <ownedAttributesInternal>
@@ -563,6 +563,13 @@
             isQuery="false" />
         </ownedOperationsInternal>
       </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <Interface
+        Id="4d5bd680-4349-4980-8752-9b5096838795"
+        name="Interface1"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
