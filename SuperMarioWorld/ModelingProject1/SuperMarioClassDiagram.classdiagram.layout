@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="SuperMarioClassDiagram">
+  <logicalClassDesignerModelMoniker Id="e155044c-37db-4124-96c1-d6d660098edd" />
+  <nestedChildShapes>
+    <classShape Id="e44d542e-f3b5-4299-9c8f-cb496aa8a784" absoluteBounds="4.25, 0.5, 1.5, 1.2226562251647315" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="8ccbb838-8a46-4c74-9c47-afc1632d62bd" LastKnownName="GameObject" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="92c4d7fe-bad5-452c-8fb1-4b446a1fb5c4" absoluteBounds="4.265, 0.89, 1.4700000000000002, 0.52148435761531187" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="dc29d842-4789-4263-8867-655faf8e043f" absoluteBounds="4.265, 1.421484357615312, 1.4700000000000002, 0.20117186754941951" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="30337309-2c80-4b18-8b77-80ece11eae4b" absoluteBounds="2.625, 1.75, 1.5, 0.90234373509883881" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="964e1894-b812-47be-921a-e3ce849612a3" LastKnownName="Static Object" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="3b147355-9dcb-4671-ae6a-97577e7e7a1a" absoluteBounds="2.64, 2.14, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="a932cfba-6bc9-4215-8366-ae73ff03588e" absoluteBounds="2.64, 2.3511718675494193, 1.4700000000000002, 0.2011718675494194" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="5a34a027-5639-494f-bc49-2a1b24a7ec57" absoluteBounds="5.625, 1.75, 1.5, 1.0624999801317849" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="6ea78238-c36d-4acb-a831-5f606cf768ac" LastKnownName="Moveable Object" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="59c5362b-c3e1-4e85-aa48-efd1e929364e" absoluteBounds="5.64, 2.14, 1.4700000000000002, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="3e052e49-1e14-42d2-8aeb-c30b165e6219" absoluteBounds="5.64, 2.3511718675494193, 1.4700000000000002, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

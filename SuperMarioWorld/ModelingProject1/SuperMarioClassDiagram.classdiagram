@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="e155044c-37db-4124-96c1-d6d660098edd" name="SuperMarioClassDiagram" linkedPackageId="0864d9c7-d9d0-4a17-96b2-d6eed7ff2384" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="e0fe66d7-cc18-4655-9c3a-4fa3ec034e27">
+      <profileInstance Id="c23069b5-2096-4d28-b386-b8e5f0cf4da1" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4503b5d0-61a0-4878-8951-15a35e3cb946">
+      <profileInstance Id="b8d8d8ab-0244-43f2-8b45-90ce995641aa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8ccbb838-8a46-4c74-9c47-afc1632d62bd" name="GameObject" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="46265ca7-bea8-4f42-9203-efd1bcf3936c" />
+        <ownedAttributesInternal>
+          <property Id="cbb338fc-dd02-4666-9413-19fac2463e9c" name="Location" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f12c8f59-956a-46b4-bc61-08e5d97684b3" />
+          </property>
+          <property Id="2c1aa4e2-8fc4-4b29-bc17-9a2df6a0ddc3" name="Sprite" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1718cb02-001d-43e1-9d82-532faa6718fc" />
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="964e1894-b812-47be-921a-e3ce849612a3" name="Static Object" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="982281e9-a8ca-473e-986f-f43ac16c1c1c" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6ea78238-c36d-4acb-a831-5f606cf768ac" name="Moveable Object" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f6950128-3e1c-4041-b98d-c2244504da40" />
+        <ownedOperationsInternal>
+          <operation Id="ca52b729-a19a-4b29-a424-815bd14f18e7" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f39c5e70-7835-49f1-a7d8-20e43e5c27c9" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="0864d9c7-d9d0-4a17-96b2-d6eed7ff2384" name="ModelingProject1">
+    <elementDefinition Id="d5cfd4ea-d15f-4fcf-8e55-918fa577661a" />
+  </package>
+</logicalClassDesignerModel>
