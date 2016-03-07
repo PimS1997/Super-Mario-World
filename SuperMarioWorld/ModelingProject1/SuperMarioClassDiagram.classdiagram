@@ -40,6 +40,36 @@
           <operation Id="ca52b729-a19a-4b29-a424-815bd14f18e7" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f39c5e70-7835-49f1-a7d8-20e43e5c27c9" />
           </operation>
+          <operation Id="063fa412-4370-49ae-84aa-9cc608012ade" name="checkCollide" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0e58ea89-b960-4f2c-ad21-173c72dddf26" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="deeffdee-2b33-47d8-9b28-1ebbce76fbce" name="Player" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="58828b86-1120-40fa-b845-b81a7f540de7" />
+        <ownedAttributesInternal>
+          <property Id="6dbc7691-9be5-4ec1-9d08-0a7dae20c2c2" name="Score" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ba1d5730-36a2-4eb2-afea-83b8b559340a" />
+          </property>
+          <property Id="2b1872f9-39bd-4b7a-acfc-f4e15cd08961" name="isAlive" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8b329cd1-25d4-4d88-8cfb-730f1fb7d53e" />
+          </property>
+          <property Id="1b329742-1cf8-4e4d-92fa-980f2a795393" name="Lives" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a553bdb1-ea27-49c2-abdb-e3c7f7f28161" />
+          </property>
+          <property Id="09adc5e1-1ee1-41c2-9a6a-d262305f6386" name="isCollidedWith" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="34169cf0-28ac-4054-8499-da2b0d526e93" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="946bfde8-e40c-4651-a532-192fb1f6652e" name="Jump" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f044e4c2-57a9-4cd3-ae0c-bcae1e74b0e6" />
+          </operation>
+          <operation Id="f0a454e0-acc3-40c3-8a6b-638bb38ae0f8" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c661aa0b-e84b-47f8-8346-53e0775a70e8" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
