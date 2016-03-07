@@ -10,10 +10,10 @@ namespace SuperMarioWorld.GameOperatingSystem
     public class SpriteSheet
     {
         private Bitmap spriteSheet;
+        private Rectangle _tile;
 
         public SpriteSheet()
         {
-
 
         }
 
@@ -22,9 +22,10 @@ namespace SuperMarioWorld.GameOperatingSystem
             this.spriteSheet = spriteSheet;
         }
 
-        public BufferedGraphics getTile(int xTile, int yTile, int width, int height)
+        public Bitmap getTile(int xTile, int yTile, int width, int height)
         {
-            BufferedGraphics sprite = spriteSheet.get(xTile, yTile, width, height);
+            _tile = new Rectangle(xTile, yTile, width, height);
+            Bitmap sprite = spriteSheet.Clone(_tile, spriteSheet.PixelFormat);
             return sprite;
         }
     }
