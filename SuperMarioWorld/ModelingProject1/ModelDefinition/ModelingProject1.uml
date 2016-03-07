@@ -321,7 +321,7 @@
     <packageHasNamedElement>
       <class
         Id="404a13a5-270a-4ef4-a710-0d62bd966644"
-        name="FlyingKoopa"
+        name="Koopa"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
@@ -354,6 +354,19 @@
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0ed21e21-a7c6-4364-9351-2f3405227609"
+            name="isBig"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -394,6 +407,95 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d06e6641-7e77-4e89-ab46-487b9ba6c265"
+        name="Mushroom"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="1cc3b205-322b-42af-bb3e-6d9a3370a012"
+            isSubstitutable="false">
+            <classMoniker
+              Id="dcd2ede6-0eed-4969-8a25-16306c56f532"
+              LastKnownName="Powerup"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8ee4eb7d-81ef-4125-8c72-d2c0f22ca9ca"
+        name="Flower"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="a16b2eee-f564-48db-b179-93f5f0056d96"
+            isSubstitutable="false">
+            <classMoniker
+              Id="dcd2ede6-0eed-4969-8a25-16306c56f532"
+              LastKnownName="Powerup"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9b8dd6fa-9257-4955-9567-c39e4d1f3b8d"
+        name="BulletBill"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3487da23-fb20-4801-9d51-e971acc098ad"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7db2f291-35cc-46cb-b3e2-1e13a753bfee"
+              LastKnownName="Enemy"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="746152c6-82be-4e80-8525-ce32fea4285d"
+            name="isBig"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="66830470-d5d4-44bb-9348-8cc6c6d70f5e"
+        name="Bowser"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="6195b431-f00c-4f19-82b0-4771330a938d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7db2f291-35cc-46cb-b3e2-1e13a753bfee"
+              LastKnownName="Enemy"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
