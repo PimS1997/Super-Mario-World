@@ -85,12 +85,15 @@
           <property Id="09adc5e1-1ee1-41c2-9a6a-d262305f6386" name="isCollidedWith" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="34169cf0-28ac-4054-8499-da2b0d526e93" />
           </property>
+          <property Id="cbca4194-b1c4-4d43-8f00-bb6aa42d85ae" name="isGrown" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ef98283-8bcd-472b-87a3-bf88d18ce767" />
+          </property>
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="946bfde8-e40c-4651-a532-192fb1f6652e" name="Jump" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f044e4c2-57a9-4cd3-ae0c-bcae1e74b0e6" />
           </operation>
-          <operation Id="f0a454e0-acc3-40c3-8a6b-638bb38ae0f8" name="Dead" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="f0a454e0-acc3-40c3-8a6b-638bb38ae0f8" name="OnDeath" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c661aa0b-e84b-47f8-8346-53e0775a70e8" />
           </operation>
         </ownedOperationsInternal>
@@ -105,6 +108,11 @@
             <elementDefinition Id="c7609ce4-bc19-4299-9fb7-8d540da8e4a8" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="e34ddf56-1cd5-4db9-abe7-138f7fd47bfa" name="PowerUp" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e3919640-b1e9-462e-abe2-5fcec30daaad" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -121,6 +129,39 @@
             <elementDefinition Id="397ef31d-c1ed-45d9-98b5-ec4834754f3b" />
           </property>
         </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="e71aa282-4ae2-4527-abd3-6afce91de7a4" name="Enemy" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7db2f291-35cc-46cb-b3e2-1e13a753bfee" />
+        <generalsInternal>
+          <generalization Id="b1727b65-5b13-411b-b12e-329e551bc9e4" isSubstitutable="false">
+            <classMoniker Id="6ea78238-c36d-4acb-a831-5f606cf768ac" LastKnownName="Moveable Object" />
+            <elementDefinition Id="10684bc0-e759-46c1-9423-09d21991b22d" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="8e2ff5df-0e35-4fe0-8c46-c89d05cef4fb" name="FlyingKoopa" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="404a13a5-270a-4ef4-a710-0d62bd966644" />
+        <generalsInternal>
+          <generalization Id="992b41c1-3fb9-41b0-b988-aa52d55f1d53" isSubstitutable="false">
+            <classMoniker Id="e71aa282-4ae2-4527-abd3-6afce91de7a4" LastKnownName="Enemy" />
+            <elementDefinition Id="16f8e8ea-cfc0-4d82-88c8-96c630651873" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="614d45d8-5368-41a3-b12d-c67093ca52d7" name="Hammerman" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dcf4eb47-c43f-480b-b9f4-8eb92e879a78" />
+        <generalsInternal>
+          <generalization Id="3e06e83a-bab9-4a46-ac4c-61ecc6ab20c6" isSubstitutable="false">
+            <classMoniker Id="e71aa282-4ae2-4527-abd3-6afce91de7a4" LastKnownName="Enemy" />
+            <elementDefinition Id="2c23365f-f67a-49e3-a647-2da422dab8f6" />
+          </generalization>
+        </generalsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

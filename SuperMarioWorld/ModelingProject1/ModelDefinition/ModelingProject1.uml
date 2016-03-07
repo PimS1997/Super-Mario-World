@@ -182,6 +182,17 @@
             isDerivedUnion="false"
             aggregation="None"
             isComposite="false" />
+          <property
+            Id="0ef98283-8bcd-472b-87a3-bf88d18ce767"
+            name="isGrown"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
         </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
@@ -194,7 +205,7 @@
             isQuery="false" />
           <operation
             Id="c661aa0b-e84b-47f8-8346-53e0775a70e8"
-            name="Dead"
+            name="OnDeath"
             isLeaf="false"
             isStatic="false"
             isAbstract="false"
@@ -220,6 +231,16 @@
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e3919640-b1e9-462e-abe2-5fcec30daaad"
+            name="PowerUp"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -252,6 +273,63 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7db2f291-35cc-46cb-b3e2-1e13a753bfee"
+        name="Enemy"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="10684bc0-e759-46c1-9423-09d21991b22d"
+            isSubstitutable="false">
+            <classMoniker
+              Id="f6950128-3e1c-4041-b98d-c2244504da40"
+              LastKnownName="Moveable Object"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="404a13a5-270a-4ef4-a710-0d62bd966644"
+        name="FlyingKoopa"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="16f8e8ea-cfc0-4d82-88c8-96c630651873"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7db2f291-35cc-46cb-b3e2-1e13a753bfee"
+              LastKnownName="Enemy"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="dcf4eb47-c43f-480b-b9f4-8eb92e879a78"
+        name="Hammerman"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="2c23365f-f67a-49e3-a647-2da422dab8f6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="7db2f291-35cc-46cb-b3e2-1e13a753bfee"
+              LastKnownName="Enemy"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
