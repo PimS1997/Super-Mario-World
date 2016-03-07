@@ -220,6 +220,11 @@
             <elementDefinition Id="6195b431-f00c-4f19-82b0-4771330a938d" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="3b68c15f-11fb-4786-ac60-fdb62bfd2e6d" name="Life" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8fa950fb-16ee-4449-b7c3-0ad55a18d107" />
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="bb2623e3-40f9-4705-a6e6-e24b96f3e343" name="useFlameThrower" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="fc4d71fb-fa68-4a64-ae62-5ad01e49552a" />
