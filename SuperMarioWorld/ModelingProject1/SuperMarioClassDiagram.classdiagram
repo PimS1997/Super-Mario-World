@@ -34,7 +34,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="6ea78238-c36d-4acb-a831-5f606cf768ac" name="Moveable Object" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="6ea78238-c36d-4acb-a831-5f606cf768ac" name="Moveable Object" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f6950128-3e1c-4041-b98d-c2244504da40" />
         <generalsInternal>
           <generalization Id="563a29d8-3f35-4535-9e86-65c24a049c42" isSubstitutable="false">
@@ -43,7 +43,7 @@
           </generalization>
         </generalsInternal>
         <ownedOperationsInternal>
-          <operation Id="ca52b729-a19a-4b29-a424-815bd14f18e7" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+          <operation Id="ca52b729-a19a-4b29-a424-815bd14f18e7" name="move" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f39c5e70-7835-49f1-a7d8-20e43e5c27c9" />
           </operation>
           <operation Id="063fa412-4370-49ae-84aa-9cc608012ade" name="checkCollide" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
@@ -85,6 +85,9 @@
           <operation Id="f0a454e0-acc3-40c3-8a6b-638bb38ae0f8" name="OnDeath" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="c661aa0b-e84b-47f8-8346-53e0775a70e8" />
           </operation>
+          <operation Id="2776a56f-b4ca-472b-a8e8-c714bc756157" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b9d334d3-894a-4229-b428-5fca96077bb5" />
+          </operation>
         </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
@@ -121,7 +124,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="e71aa282-4ae2-4527-abd3-6afce91de7a4" name="Enemy" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="e71aa282-4ae2-4527-abd3-6afce91de7a4" name="Enemy" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="7db2f291-35cc-46cb-b3e2-1e13a753bfee" />
         <generalsInternal>
           <generalization Id="b1727b65-5b13-411b-b12e-329e551bc9e4" isSubstitutable="false">
@@ -134,6 +137,11 @@
             <elementDefinition Id="8272be97-a55b-4408-9abb-8c6f7df3e5d9" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="abcaac3b-3353-4ae2-9d5d-79bdff770386" name="move" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4a2c4daf-dae0-4900-ab3f-441a36219272" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -145,6 +153,11 @@
             <elementDefinition Id="16f8e8ea-cfc0-4d82-88c8-96c630651873" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="728695aa-4c38-4016-b2e5-a39ef9ec8149" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d75c7a3-f1b3-4f7e-a162-0cc6392fbd09" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -161,6 +174,11 @@
             <elementDefinition Id="0ed21e21-a7c6-4364-9351-2f3405227609" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="4340551b-9b4b-4d4c-b8d1-34c220731dbb" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7bbd8f1f-9fa9-4b19-892d-aa0b2cee560c" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -215,6 +233,11 @@
             <elementDefinition Id="746152c6-82be-4e80-8525-ce32fea4285d" />
           </property>
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="649d25cb-3657-4a3d-a962-d827ed43fcbd" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="40c69e09-e9dd-4b80-ad96-cb9c32fbaaf6" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -226,6 +249,14 @@
             <elementDefinition Id="6195b431-f00c-4f19-82b0-4771330a938d" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="79ffedfe-dbdb-499b-98d8-b4b937994145" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8cf9f1fb-8dde-46dd-bcbe-a5381910a55c" />
+          </operation>
+          <operation Id="bb2623e3-40f9-4705-a6e6-e24b96f3e343" name="useFlameThrower" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fc4d71fb-fa68-4a64-ae62-5ad01e49552a" />
+          </operation>
+        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>

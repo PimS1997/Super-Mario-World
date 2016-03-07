@@ -98,7 +98,7 @@
       <class
         Id="f6950128-3e1c-4041-b98d-c2244504da40"
         name="Moveable Object"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>
@@ -117,7 +117,7 @@
             name="move"
             isLeaf="false"
             isStatic="false"
-            isAbstract="false"
+            isAbstract="true"
             concurrency="Sequential"
             isQuery="false" />
           <operation
@@ -222,6 +222,14 @@
             isAbstract="false"
             concurrency="Sequential"
             isQuery="false" />
+          <operation
+            Id="b9d334d3-894a-4229-b428-5fca96077bb5"
+            name="move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
         </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
@@ -290,7 +298,7 @@
       <class
         Id="7db2f291-35cc-46cb-b3e2-1e13a753bfee"
         name="Enemy"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>
@@ -316,6 +324,16 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="4a2c4daf-dae0-4900-ab3f-441a36219272"
+            name="move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="true"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -335,6 +353,16 @@
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8d75c7a3-f1b3-4f7e-a162-0cc6392fbd09"
+            name="move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -367,6 +395,16 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7bbd8f1f-9fa9-4b19-892d-aa0b2cee560c"
+            name="move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -477,6 +515,16 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="40c69e09-e9dd-4b80-ad96-cb9c32fbaaf6"
+            name="move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -496,6 +544,24 @@
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="8cf9f1fb-8dde-46dd-bcbe-a5381910a55c"
+            name="move"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fc4d71fb-fa68-4a64-ae62-5ad01e49552a"
+            name="useFlameThrower"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
   </packagedElements>
