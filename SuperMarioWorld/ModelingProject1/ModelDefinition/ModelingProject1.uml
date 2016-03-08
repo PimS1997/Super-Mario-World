@@ -22,7 +22,7 @@
       <class
         Id="46265ca7-bea8-4f42-9203-efd1bcf3936c"
         name="GameObject"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <ownedAttributesInternal>
@@ -55,7 +55,7 @@
       <class
         Id="982281e9-a8ca-473e-986f-f43ac16c1c1c"
         name="Static Object"
-        isAbstract="false"
+        isAbstract="true"
         isLeaf="false"
         isActiveClass="false">
         <generalsInternal>
@@ -111,6 +111,19 @@
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="b8216390-5805-4b3d-8cb7-783a82ba5190"
+            name="Speed"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation
             Id="f39c5e70-7835-49f1-a7d8-20e43e5c27c9"
@@ -538,6 +551,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9a67a538-51f6-4b72-8e62-039318fdc65d">
+            <classMoniker
+              Id="8a99f586-c659-4d26-ad79-8d8036dca710"
+              LastKnownName="LevelBuilder"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="749bdb5f-9948-4385-a7ba-e62fb9fc7789"
@@ -595,7 +617,7 @@
         <ownedAttributesInternal>
           <property
             Id="9fe9c019-01f8-4963-90ef-5f1c252e5eac"
-            name="GameObjects&lt;GameObject&gt;"
+            name="Level"
             isLeaf="false"
             isStatic="false"
             isReadOnly="false"
@@ -605,16 +627,6 @@
             aggregation="None"
             isComposite="false" />
         </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation
-            Id="78738642-47a7-4994-9bbf-fcf447700dec"
-            name="Build"
-            isLeaf="false"
-            isStatic="false"
-            isAbstract="false"
-            concurrency="Sequential"
-            isQuery="false" />
-        </ownedOperationsInternal>
       </class>
     </packageHasNamedElement>
     <packageHasNamedElement>
@@ -634,6 +646,47 @@
               LastKnownLocation="ModelingProject1.uml" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association
+            Id="438ed74d-9ea2-4ea5-a232-abc3834ce49b"
+            isDerived="false"
+            sourceEndRoleName="MysteryBlock"
+            targetEndRoleName="Contains"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="6c3a80a3-242a-4c06-a1b4-23e16170421c"
+              LastKnownName="Contain"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d9489a37-b4e7-4e7b-b9f3-02cd8adf9c39"
+                  name="MysteryBlock"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="78d4e63b-dd03-44a1-94ae-ec40f701a4ba"
+                  name="Contains"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property
             Id="4b6a0399-c701-4166-a410-7cc751668782"
@@ -674,6 +727,44 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="8a99f586-c659-4d26-ad79-8d8036dca710"
+        name="LevelBuilder"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="6017780d-3b2b-4460-80ce-4b107165df60"
+            name="Build"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="6c3a80a3-242a-4c06-a1b4-23e16170421c"
+        name="Contain"
+        isAbstract="false"
+        isLeaf="false">
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="9874cbbe-60e3-4cf4-ba99-a7ce658a04df"
+            name="Mushroom" />
+          <enumerationLiteral
+            Id="01b9e524-6630-43ff-832a-b2692c46d663"
+            name="Flower" />
+          <enumerationLiteral
+            Id="5254f689-8227-4e49-8bdf-d248bc399890"
+            name="Coin" />
+        </ownedLiterals>
+      </enumeration>
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
