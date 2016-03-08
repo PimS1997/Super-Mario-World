@@ -15,7 +15,7 @@
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
-      <class Id="964e1894-b812-47be-921a-e3ce849612a3" name="Static Object" isAbstract="false" isLeaf="false" isActiveClass="false">
+      <class Id="964e1894-b812-47be-921a-e3ce849612a3" name="Static Object" isAbstract="true" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="982281e9-a8ca-473e-986f-f43ac16c1c1c" />
         <generalsInternal>
           <generalization Id="3112f337-6eef-4c21-8aa6-6dcb1948781a" isSubstitutable="false">
@@ -42,6 +42,11 @@
             <elementDefinition Id="41f76966-e185-4746-9de0-59653ec98f91" />
           </generalization>
         </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="c78435d2-eaf2-469b-b358-9d5835635f48" name="Speed" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b8216390-5805-4b3d-8cb7-783a82ba5190" />
+          </property>
+        </ownedAttributesInternal>
         <ownedOperationsInternal>
           <operation Id="ca52b729-a19a-4b29-a424-815bd14f18e7" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="f39c5e70-7835-49f1-a7d8-20e43e5c27c9" />
@@ -235,6 +240,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="4e9c6b2d-3480-408d-bd29-6d95ca468ba3" name="Level" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="5448229f-1f71-48c8-b5ac-aaf789973832" />
+        <suppliersInternal>
+          <dependency Id="1116e51d-fec3-47fd-8f53-184d4eb34312">
+            <classMoniker Id="0bbbee98-ca7d-4059-8e3a-a321187ae102" LastKnownName="LevelBuilder" />
+            <elementDefinition Id="9a67a538-51f6-4b72-8e62-039318fdc65d" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association Id="146c781f-bd47-4c57-a262-9d8c3be1af5c" isDerived="false" sourceEndRoleName="Level" targetEndRoleName="GameObject" isLeaf="false" isAbstract="false">
             <classMoniker Id="8ccbb838-8a46-4c74-9c47-afc1632d62bd" LastKnownName="GameObject" />
@@ -264,15 +275,10 @@
           </association>
         </targetEnds>
         <ownedAttributesInternal>
-          <property Id="abd7acb2-65d8-4e46-9871-a191aafbed1c" name="GameObjects&lt;GameObject&gt;" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+          <property Id="abd7acb2-65d8-4e46-9871-a191aafbed1c" name="Level" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="9fe9c019-01f8-4963-90ef-5f1c252e5eac" />
           </property>
         </ownedAttributesInternal>
-        <ownedOperationsInternal>
-          <operation Id="31e5a343-0b91-4997-8295-5316a5eefdf8" name="Build" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
-            <elementDefinition Id="78738642-47a7-4994-9bbf-fcf447700dec" />
-          </operation>
-        </ownedOperationsInternal>
       </class>
     </logicalClassDesignerModelHasTypes>
     <logicalClassDesignerModelHasTypes>
@@ -284,6 +290,24 @@
             <elementDefinition Id="b5964a17-7370-4ce0-8cce-2d18928eb717" />
           </generalization>
         </generalsInternal>
+        <targetEnds>
+          <association Id="0770ead0-ba28-4b35-89bf-8131d47e7b3f" isDerived="false" sourceEndRoleName="MysteryBlock" targetEndRoleName="Contains" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="4e7c0de4-5c09-4f3f-a202-97dc0e844703" LastKnownName="Contain" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1306cca4-f730-404c-bca0-88e2441033f8" name="MysteryBlock" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d9489a37-b4e7-4e7b-b9f3-02cd8adf9c39" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="988dd0a5-d7af-469d-a129-a211c0e2fd95" name="Contains" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="78d4e63b-dd03-44a1-94ae-ec40f701a4ba" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="438ed74d-9ea2-4ea5-a232-abc3834ce49b" />
+          </association>
+        </targetEnds>
         <ownedAttributesInternal>
           <property Id="bcfc0112-40cb-4616-9630-59e2fd29b16f" name="Contains" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="4b6a0399-c701-4166-a410-7cc751668782" />
@@ -298,6 +322,32 @@
           </operation>
         </ownedOperationsInternal>
       </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0bbbee98-ca7d-4059-8e3a-a321187ae102" name="LevelBuilder" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8a99f586-c659-4d26-ad79-8d8036dca710" />
+        <ownedOperationsInternal>
+          <operation Id="4bb17fe5-c7ec-40cf-a27a-f9cc057e1aa5" name="Build" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6017780d-3b2b-4460-80ce-4b107165df60" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="4e7c0de4-5c09-4f3f-a202-97dc0e844703" name="Contain" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6c3a80a3-242a-4c06-a1b4-23e16170421c" />
+        <ownedLiterals>
+          <enumerationLiteral Id="eb2edff3-afe7-4ccd-95cd-09d8dfd27fda" name="Mushroom">
+            <elementDefinition Id="9874cbbe-60e3-4cf4-ba99-a7ce658a04df" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="ffc7521b-b93a-461a-a2be-0d4a8a6e9dd7" name="Flower">
+            <elementDefinition Id="01b9e524-6630-43ff-832a-b2692c46d663" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="1eccd46a-3336-471c-9b36-519c8286c766" name="Coin">
+            <elementDefinition Id="5254f689-8227-4e49-8bdf-d248bc399890" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
     </logicalClassDesignerModelHasTypes>
   </packagedElements>
   <package Id="0864d9c7-d9d0-4a17-96b2-d6eed7ff2384" name="ModelingProject1">
