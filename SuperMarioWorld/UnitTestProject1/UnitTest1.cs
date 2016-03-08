@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using SuperMarioWorld.GameOperatingSystem;
+using System.Drawing;
 
 namespace UnitTestProject1
 {
@@ -9,9 +10,7 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod1()
         {
-            SpriteSheet sprites = new SpriteSheet();
-            Bitmap spriteSheet = new Bitmap(500, 500);
-            sprites.setSpriteSheet();
+            Image img = ImageHandler.LoadImageFrom(@"\res\thing.png");
         }
     }
 }
