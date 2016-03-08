@@ -17,6 +17,13 @@ namespace SuperMarioWorld
         Point _position;
         Pen pen = new Pen(Color.Aqua);
         Image img = ImageHandler.LoadImageFrom(@"\res\thing.png");
+
+        Player player = new Player();
+
+        public static int width = 1024;
+        public static int height = 768;
+
+
         public MainForm()
         {
             InitializeComponent();
@@ -28,15 +35,16 @@ namespace SuperMarioWorld
         void Application_Idle(Object sender, EventArgs e)
         {
             Invalidate();
-            Draw();
+            Render();
         }
 
-        void Draw()
+        void Render()
         {
 
             Graphics graphics = Graphics.FromImage(_backbuffer);
             graphics.Clear(Color.Blue);
             mainPB.Image = _backbuffer;
+            player.render(graphics);
             //_position.X += 1;
         }
 

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperMarioWorld.GameOperatingSystem
+namespace SuperMarioWorld
 {
     public class Vector2F
     {

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace SuperMarioWorld
 {
-    class Player
+    public abstract class GameObject
     {
     }
 }
