@@ -16,14 +16,12 @@ namespace SuperMarioWorld
         Bitmap _backbuffer;
         Point _position;
         Pen pen = new Pen(Color.Aqua);
-
-        int bufferWidth = 500;
-        int bufferHeight = 500;
+        Image img = ImageHandler.LoadImageFrom(@"\res\thing.png");
         public MainForm()
         {
             InitializeComponent();
 
-            _backbuffer = new Bitmap(bufferWidth, bufferHeight);
+            _backbuffer = new Bitmap(mainPB.Width, mainPB.Height);
             _position = new Point(10, 10);
             Application.Idle += Application_Idle;
         }
@@ -35,9 +33,9 @@ namespace SuperMarioWorld
 
         void Draw()
         {
+
             Graphics graphics = Graphics.FromImage(_backbuffer);
             graphics.Clear(Color.Blue);
-            graphics.DrawRectangle(pen, _position.X, 10, 100, 100);
             mainPB.Image = _backbuffer;
             //_position.X += 1;
         }

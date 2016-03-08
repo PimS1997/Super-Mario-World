@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SuperMarioWorld.GameOperatingSystem
+namespace SuperMarioWorld
 {
     public class ImageHandler
     {
@@ -14,7 +14,7 @@ namespace SuperMarioWorld.GameOperatingSystem
         {
             Image img = null;
 
-            return img = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, path));
+            return img = Image.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, @"..\.." + path));
         } 
     }
 }
